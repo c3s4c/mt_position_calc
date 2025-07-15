@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "MetaTrader Position Size Calculator",
+  "version": "1.2",
+  "description": "Calculate position size based on risk for all asset types in MetaTrader Web.",
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.metatrader.app/*",
+        "*://*.metatrader5.com/*"
+      ],
+      "js": [
+        "content.js"
+      ]
+    }
+  ],
+  "icons": {
+    "48": "icon.png"
+  }
+}
